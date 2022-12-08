@@ -15,9 +15,11 @@ html {
 .searchbutton {
   border-color: #9a24b1;
   background-color: #eedaf2;
+  border-radius: 10px;
 }
 .searchbutton:hover {
   background-color: #9a24b1;
+  border-radius: 10px;
 }
 #current {
   font-size: 70px;
