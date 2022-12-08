@@ -4,7 +4,9 @@ html {
 }
 .container {
   background: #eedaf2;
-  padding: 40px;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 10px;
 }
 #searchengine {
   text-align: center;
@@ -17,7 +19,7 @@ html {
 .searchbutton:hover {
   background-color: #9a24b1;
 }
-.current {
+#current {
   font-size: 70px;
   font-weight: bold;
   color: #9a24b1;
@@ -31,26 +33,31 @@ h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-weight: bold;
+  font-size: 24px;
 }
 .fa-solid {
   color: #ffc93c;
-  font-size: 50px;
+  font-size: 30px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   text-shadow: 2px 2px #7d7d7d;
 }
 .wkdays {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
 }
 .coldtemp {
-  font-size: 20px;
+  font-size: 14px;
   color: #8d79b5;
   margin-top: 0;
 }
 .hottemp {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: bold;
+}
+ul {
+  padding: 0;
+  margin: 0;
 }
 .details {
   list-style-type: none;
@@ -59,7 +66,7 @@ h1 {
   color: #8d79b5;
 }
 .date {
-  font-size: 24px;
+  font-size: 20px;
   color: #8d79b5;
   font-weight: bold;
 }
