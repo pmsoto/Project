@@ -29,8 +29,8 @@ function search(event) {
 let form = document.querySelector("#searchengine");
 form.addEventListener("submit", search);
 
-console.log(response.data);
 function showTemp(response) {
+  console.log(response.data);
   let temperature = Math.round(response.data.temperature.day);
   let temperatureLog = document.querySelector("#current");
   temperatureLog.innerHTML = `${temperature}°C`;
