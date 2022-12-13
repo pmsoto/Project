@@ -21,7 +21,7 @@ html {
   background-color: #9a24b1;
   border-radius: 10px;
 }
-#current {
+#temperature {
   font-size: 70px;
   font-weight: bold;
   color: #9a24b1;
@@ -36,6 +36,7 @@ h1 {
   -webkit-text-stroke-color: black;
   font-weight: bold;
   font-size: 24px;
+  text-transform: capitalize;
 }
 .fa-solid {
   color: #ffc93c;
@@ -71,6 +72,12 @@ ul {
   font-size: 20px;
   color: #8d79b5;
   font-weight: bold;
+}
+.description {
+  font-size: 20px;
+  color: #8d79b5;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 .author {
   text-align: center;

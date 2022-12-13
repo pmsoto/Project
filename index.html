@@ -26,22 +26,22 @@
         <input type="search" name="search" id="search" placeholder="City" />
         <input class="searchbutton" type="submit" value="🔍" />
       </form>
-      <h1>LOS ANGELES, CA</h1>
+      <h1 id="city"></h1>
 
       <div class="container text-center">
         <div class="row">
           <div class="col">
-            <div class="date">date</div>
+            <div class="date"></div>
+            <div class="description"></div>
           </div>
           <div class="col">
             <i class="fa-solid fa-cloud-sun"></i>
-            <span id="current">77°</span>
+            <span id="temperature"></span>
           </div>
           <div class="col">
             <ul class="details">
-              <li>Precipitation: 40%</li>
-              <li>Humidity: 71%</li>
-              <li>Wind: 5 mph</li>
+              <li>Humidity: <span id="humid"></span></li>
+              <li>Wind: <span id="wind"></span> mph</li>
             </ul>
           </div>
           <div class="container text-center">

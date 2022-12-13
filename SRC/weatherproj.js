@@ -32,6 +32,14 @@ form.addEventListener("submit", search);
 function showTemp(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.temperature.current);
-  let temperatureLog = document.querySelector("#current");
+  let temperatureLog = document.querySelector("#temperature");
   temperatureLog.innerHTML = `${temperature}°F`;
+
+  let descriptionLog = document.querySelector(".description");
+  let description = response.data.condition.description;
+  descriptionLog.innerHTML = `${description}`;
+
+  let humidityLog = document.querySelector("#humid");
+  let humidity = response.data.temperature.humidity;
+  humidityLog.innerHTML = `${humidity}%`;
 }
