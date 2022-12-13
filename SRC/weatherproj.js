@@ -42,4 +42,8 @@ function showTemp(response) {
   let humidityLog = document.querySelector("#humid");
   let humidity = response.data.temperature.humidity;
   humidityLog.innerHTML = `${humidity}%`;
+
+  let windLog = document.querySelector("#wind");
+  let wind = Math.round(response.data.wind.speed);
+  windLog.innerHTML = `${wind} mph`;
 }
