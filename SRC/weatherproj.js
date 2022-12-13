@@ -14,7 +14,7 @@ let hours = ("0" + now.getHours()).slice(-2);
 let minutes = ("0" + now.getMinutes()).slice(-2);
 
 let current = document.querySelector(".date");
-current.innerHTML = `${day} ${hours}:${minutes}`;
+current.innerHTML = `Updated: ${day} ${hours}:${minutes}`;
 
 function search(event) {
   event.preventDefault();

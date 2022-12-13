@@ -69,9 +69,10 @@ ul {
   color: #8d79b5;
 }
 .date {
-  font-size: 20px;
+  font-size: 18px;
   color: #8d79b5;
   font-weight: bold;
+  font-style: italic;
 }
 .description {
   font-size: 20px;
