@@ -20,8 +20,8 @@ function search(event) {
   event.preventDefault();
   let city = document.querySelector("#search").value;
   let h1 = document.querySelector("h1");
-  let apiKey = "b2d9fa1f2b35557e4615dd5fab218834";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiKey = "6caa16b0540f85od4c55153dbff8tb89";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   h1.innerHTML = `${city}`;
   axios.get(apiUrl).then(showTemp);
 }
