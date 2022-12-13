@@ -31,7 +31,7 @@ form.addEventListener("submit", search);
 
 function showTemp(response) {
   console.log(response.data);
-  let temperature = Math.round(response.data.temperature.day);
+  let temperature = Math.round(response.data.temperature.current);
   let temperatureLog = document.querySelector("#current");
-  temperatureLog.innerHTML = `${temperature}°C`;
+  temperatureLog.innerHTML = `${temperature}°F`;
 }
