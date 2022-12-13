@@ -46,4 +46,11 @@ function showTemp(response) {
   let windLog = document.querySelector("#wind");
   let wind = Math.round(response.data.wind.speed);
   windLog.innerHTML = `${wind} mph`;
+
+  let iconLog = document.querySelector("#icon");
+  let icon = response.data.condition.icon;
+  iconLog.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png`
+  );
 }

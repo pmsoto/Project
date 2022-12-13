@@ -22,7 +22,7 @@ html {
   border-radius: 10px;
 }
 #temperature {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
   color: #9a24b1;
   -webkit-text-stroke-width: 1px;
@@ -69,7 +69,7 @@ ul {
   color: #8d79b5;
 }
 .date {
-  font-size: 18px;
+  font-size: 16px;
   color: #8d79b5;
   font-weight: bold;
   font-style: italic;
