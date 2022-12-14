@@ -47,6 +47,19 @@ html {
   color: #9a24b1;
   text-align: top;
 }
+.celsius {
+  font-weight: bold;
+  color: #fff;
+  text-align: top;
+  text-decoration: underline;
+}
+.celsius:hover {
+  font-weight: bold;
+  color: #000;
+  text-align: top;
+  text-decoration: underline;
+  cursor: pointer;
+}
 h1 {
   color: #fff;
   text-align: center;
