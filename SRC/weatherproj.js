@@ -33,7 +33,7 @@ function showTemp(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.temperature.current);
   let temperatureLog = document.querySelector("#temperature");
-  temperatureLog.innerHTML = `${temperature}°F`;
+  temperatureLog.innerHTML = `${temperature}`;
 
   let descriptionLog = document.querySelector(".description");
   let description = response.data.condition.description;

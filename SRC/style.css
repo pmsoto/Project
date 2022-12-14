@@ -40,6 +40,12 @@ html {
   color: #9a24b1;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  text-align: left;
+}
+.units {
+  font-weight: bold;
+  color: #9a24b1;
+  text-align: top;
 }
 h1 {
   color: #fff;
