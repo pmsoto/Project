@@ -25,6 +25,7 @@
       <form action="/submit" id="searchengine">
         <input type="search" name="search" id="search" placeholder="City" />
         <input class="searchbutton" type="submit" value="🔍" />
+        <input class="geobutton" type="submit" value="Current" />
       </form>
       <h1 id="city"></h1>
 
@@ -35,10 +36,8 @@
             <div class="description"></div>
           </div>
           <div class="col">
-            <img
-              id="main-icon"
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
-            />
+            <img id="main-icon" src="" />
+            <br />
             <span id="temperature"></span>
           </div>
           <div class="col">
