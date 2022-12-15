@@ -14,22 +14,22 @@ html {
 }
 .searchbutton {
   border-color: #9a24b1;
-  background-color: #eedaf2;
+  background-color: #9a24b1;
   border-radius: 10px;
 }
 .searchbutton:hover {
-  background-color: #9a24b1;
+  background-color: #eedaf2;
   border-radius: 10px;
 }
 .geobutton {
   border-color: #9a24b1;
-  background-color: #eedaf2;
+  background-color: #9a24b1;
   border-radius: 10px;
-  color: #000;
+  color: #fff;
   font-weight: bold;
 }
 .geobutton:hover {
-  background-color: #9a24b1;
+  background-color: #eedaf2;
   border-radius: 10px;
   color: #fff;
   font-weight: bold;
