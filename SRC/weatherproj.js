@@ -20,24 +20,24 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast1");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat"];
+  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       `
     <div class="col">
-      <div class="wkdays">Monday</div>
+      <div class="wkdays">${day}</div>
       <img
         id="day1"
         src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
       />
-    <div>
+    <br /> 
     <span class="hottemp">65° </span
     ><span class="coldtemp">| 38°</span>
     </div>`;
+    forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
   });
-  forecastHTML + forecastHTML + `</div>`;
-  forecastElement.innerHTML = forecastHTML;
 }
 
 function search(event) {
