@@ -16,6 +16,30 @@ let minutes = ("0" + now.getMinutes()).slice(-2);
 let current = document.querySelector(".date");
 current.innerHTML = `Updated: ${day} ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast1");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col">
+      <div class="wkdays">Monday</div>
+      <img
+        id="day1"
+        src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+      />
+    <div>
+    <span class="hottemp">65° </span
+    ><span class="coldtemp">| 38°</span>
+    </div>`;
+  });
+  forecastHTML + forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#search").value;
@@ -25,6 +49,8 @@ function search(event) {
   h1.innerHTML = `${city}`;
   axios.get(apiUrl).then(showTemp);
 }
+
+displayForecast();
 
 let form = document.querySelector("#searchengine");
 form.addEventListener("submit", search);
