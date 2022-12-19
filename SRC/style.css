@@ -112,6 +112,13 @@ ul {
   font-weight: bold;
   text-transform: capitalize;
 }
+.info {
+  list-style-type: none;
+  font-size: 14px;
+  font-style: italic;
+  color: #8d79b5;
+  text-transform: capitalize;
+}
 .author {
   text-align: center;
 }
