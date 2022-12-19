@@ -16,7 +16,8 @@ let minutes = ("0" + now.getMinutes()).slice(-2);
 let current = document.querySelector(".date");
 current.innerHTML = `Updated: ${day} ${hours}:${minutes}`;
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
   let forecastElement = document.querySelector("#forecast1");
 
   let forecastHTML = `<div class="row">`;
@@ -35,7 +36,7 @@ function displayForecast() {
     <span class="hottemp">65° </span
     ><span class="coldtemp">| 38°</span>
     </div>`;
-    forecastHTML + `</div>`;
+    forecastHTML + forecastHTML + `</div>`;
     forecastElement.innerHTML = forecastHTML;
   });
 }
@@ -50,10 +51,15 @@ function search(event) {
   axios.get(apiUrl).then(showTemp);
 }
 
-displayForecast();
-
 let form = document.querySelector("#searchengine");
 form.addEventListener("submit", search);
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = `6caa16b0540f85od4c55153dbff8tb89`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
 
 function showTemp(response) {
   console.log(response.data);
@@ -79,4 +85,6 @@ function showTemp(response) {
     "src",
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${iconKey}.png`
   );
+
+  getForecast(response.data.coordinates);
 }
