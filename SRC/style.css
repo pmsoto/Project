@@ -5,7 +5,7 @@ html {
 .container {
   background: #eedaf2;
   padding: 20px;
-  max-width: 700px;
+  max-width: 600px;
   border-radius: 10px;
 }
 #searchengine {
@@ -13,73 +13,54 @@ html {
   color: #eedaf2;
 }
 .searchbutton {
-  border-color: #9a24b1;
+  border-color: #000;
   background-color: #9a24b1;
   border-radius: 10px;
+  box-shadow: 3px 3px 8px #888888;
 }
 .searchbutton:hover {
   background-color: #eedaf2;
   border-radius: 10px;
 }
 .geobutton {
-  border-color: #9a24b1;
+  border-color: #000;
   background-color: #9a24b1;
   border-radius: 10px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
+  box-shadow: 3px 3px 8px #888888;
 }
 .geobutton:hover {
   background-color: #eedaf2;
   border-radius: 10px;
-  color: #fff;
+  color: #000;
   font-weight: bold;
 }
 #temperature {
   font-size: 50px;
   font-weight: bold;
-  color: #9a24b1;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  color: #000;
   text-align: left;
 }
 .units {
   font-weight: bold;
-  color: #9a24b1;
-  text-align: top;
-}
-.celsius {
-  font-weight: bold;
-  color: #fff;
-  text-align: top;
-  text-decoration: underline;
-}
-.celsius:hover {
-  font-weight: bold;
   color: #000;
   text-align: top;
-  text-decoration: underline;
-  cursor: pointer;
 }
 h1 {
-  color: #fff;
+  color: #000;
   text-align: center;
   background-color: #eedaf2;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
   font-weight: bold;
-  font-size: 24px;
-  text-transform: capitalize;
-}
-.fa-solid {
-  color: #ffc93c;
   font-size: 30px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  text-shadow: 2px 2px #7d7d7d;
+  text-transform: capitalize;
 }
 .wkdays {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
+}
+#day1 {
+  max-width: 80px;
 }
 .coldtemp {
   font-size: 14px;
@@ -101,24 +82,23 @@ ul {
   color: #8d79b5;
 }
 .date {
-  font-size: 16px;
+  font-size: 12px;
   color: #8d79b5;
-  font-weight: bold;
   font-style: italic;
 }
 .description {
-  font-size: 20px;
+  font-size: 14px;
   color: #8d79b5;
   font-weight: bold;
   text-transform: capitalize;
 }
 .info {
   list-style-type: none;
-  font-size: 14px;
-  font-style: italic;
+  font-size: 11px;
   color: #8d79b5;
   text-transform: capitalize;
 }
 .author {
   text-align: center;
+  color: #9a24b1;
 }

@@ -76,7 +76,6 @@ let form = document.querySelector("#searchengine");
 form.addEventListener("submit", search);
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = `6caa16b0540f85od4c55153dbff8tb89`;
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${coordinates.latitude}&lon=${coordinates.longitude}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
@@ -87,7 +86,7 @@ function showTemp(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.temperature.current);
   let temperatureLog = document.querySelector("#temperature");
-  temperatureLog.innerHTML = `${temperature}`;
+  temperatureLog.innerHTML = `${temperature}°F`;
 
   let descriptionLog = document.querySelector(".description");
   let description = response.data.condition.description;
@@ -95,11 +94,11 @@ function showTemp(response) {
 
   let humidityLog = document.querySelector("#humid");
   let humidity = response.data.temperature.humidity;
-  humidityLog.innerHTML = `${humidity}%`;
+  humidityLog.innerHTML = `Humidity: ${humidity}%`;
 
   let windLog = document.querySelector("#wind");
   let wind = Math.round(response.data.wind.speed);
-  windLog.innerHTML = `${wind} mph`;
+  windLog.innerHTML = `Wind: ${wind} mph`;
 
   let iconLog = document.querySelector("#main-icon");
   let iconKey = response.data.condition.icon;
