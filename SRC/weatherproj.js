@@ -46,7 +46,7 @@ function displayForecast(response) {
       <img
         id="day1"
         src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
-          response.data.daily[0].condition.icon
+          forecastDay.condition.icon
         }.png"
       />
     <br /> 

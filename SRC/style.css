@@ -22,20 +22,6 @@ html {
   background-color: #eedaf2;
   border-radius: 10px;
 }
-.geobutton {
-  border-color: #000;
-  background-color: #9a24b1;
-  border-radius: 10px;
-  color: #000;
-  font-weight: bold;
-  box-shadow: 3px 3px 8px #888888;
-}
-.geobutton:hover {
-  background-color: #eedaf2;
-  border-radius: 10px;
-  color: #000;
-  font-weight: bold;
-}
 #temperature {
   font-size: 50px;
   font-weight: bold;
